@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="register_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box span.details {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-pass {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Media Queries for Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .input-box {
+                margin-bottom: 10px;
+            }
+            input[type="text"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="email"],
+            select {
+                font-size: 14px;
+            }
+            .button input[type="submit"] {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <br><br>
+    <div class="title">Student Registration Form</div>
+    <div class="content">
+        <form action="insert_student_details_1.php" method="POST" autocomplete="off">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">SR Number</span>
+                    <input type="text" placeholder="Enter your SR Number" name="SR" required>
+                </div>
+                <!-- Add similar input boxes for other fields -->
+            </div>
+            <div class="button">
+                <input onclick="Validate()" type="submit" value="Register">
+            </div>
+            <a href="first_choice_page.html"><p class="forgot-pass"> <- Back </p></a>
+            <br>
+            <a href="index.html"><p class="forgot-pass">Enter dashboard</p></a>
+        </form>
+    </div>
+</div>
+
+<!-- Add JavaScript for validation if needed -->
+
+</body>
+</html>
